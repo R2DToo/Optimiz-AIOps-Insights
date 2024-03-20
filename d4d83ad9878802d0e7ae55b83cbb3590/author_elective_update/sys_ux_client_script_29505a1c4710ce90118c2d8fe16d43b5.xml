@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">807682d447dc8e90118c2d8fe16d436f</macroponent>
+        <name>Set SysMetric chosenMetric</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const data = api.data.look_up_records_1.results[0];
+    console.log("DATA: ", data);
+
+    let filter = `cmdb_ci=${api.state.sysID}^metric_type_id.metric_type_tiny_nameIN${data.label.value}`;
+    api.setState('metricExistsFilter', filter);
+    api.data.look_up_records_2.refresh();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 20:50:36</sys_created_on>
+        <sys_id>29505a1c4710ce90118c2d8fe16d43b5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Set SysMetric chosenMetric</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_29505a1c4710ce90118c2d8fe16d43b5</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-07 21:48:52</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_ux_client_script_29505a1c4710ce90118c2d8fe16d43b5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="KPI Details"&gt;807682d447dc8e90118c2d8fe16d436f&lt;/macroponent&gt;&lt;name&gt;Set SysMetric chosenMetric&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const data = api.data.look_up_records_1.results[0];
+    console.log("DATA: ", data);
+
+    let filter = `cmdb_ci=${api.state.sysID}^metric_type_id.metric_type_tiny_nameIN${data.label.value}`;
+    api.setState('metricExistsFilter', filter);
+    api.data.look_up_records_2.refresh();
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.montanez&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-07 20:50:36&lt;/sys_created_on&gt;&lt;sys_id&gt;29505a1c4710ce90118c2d8fe16d43b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set SysMetric chosenMetric&lt;/sys_name&gt;&lt;sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Optimiz AIOps Insights"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_29505a1c4710ce90118c2d8fe16d43b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.montanez&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-07 21:48:52&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>238215405</payload_hash>
+        <record_name>Set SysMetric chosenMetric</record_name>
+        <reverted_from/>
+        <source>0633e1d447988e90118c2d8fe16d4307</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 21:48:52</sys_created_on>
+        <sys_id>eafaea504714ce90118c2d8fe16d4302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d858b8fe90000001</sys_recorded_at>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-07 21:48:52</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>22faea508514ce90332a98d1e9644a02</update_guid>
+        <update_guid_history>22faea508514ce90332a98d1e9644a02:238215405,67cf5ad81590ce9020d4d322b9bfb2a3:-598834742,4c7f1e984890ce909b6b15b4295c07ae:-325587113,affe9e589790ce90602cc316678b8024:517829092,34ad9e94a190ce904ec37078044550b2:-1018965625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-08 16:47:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>013f7cd265c8468081421382356f6400</sys_id>
+        <sys_metadata>29505a1c4710ce90118c2d8fe16d43b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set SysMetric chosenMetric</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_29505a1c4710ce90118c2d8fe16d43b5</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_29505a1c4710ce90118c2d8fe16d43b5">eafaea504714ce90118c2d8fe16d4302</sys_update_version>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-08 16:47:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

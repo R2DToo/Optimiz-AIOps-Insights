@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">807682d447dc8e90118c2d8fe16d436f</macroponent>
+        <name>line_2/dataSources</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+    var serverMapping = {
+        "cmdb_ci_linux_server": {
+            server: api.state.cmdbCIServer,
+            serverTitle: "Linux"
+        },
+        "cmdb_ci_win_server": {
+            server: api.state.cmdbCIServer,
+            serverTitle: "Windows"
+        }
+    };
+
+    var { server, serverTitle } = serverMapping[api.state.ciClass] || {};
+
+    let resource = api.state.resource;
+
+    // 8A)
+    let tableKey = (resource && resource.length > 0)
+        ? "ci_resource_hardware" // with resources
+        : api.state.ciClass; // without resources
+
+    // 8B)
+    let queryStringArray = (resource && resource.length > 0)
+        ? `^name=${resource}` // If resource is not empty or null
+        : ''; // If resource is empty or null
+
+    let filterQuery = (resource && resource.length > 0)
+        ? `cmdb_ci=${api.state.sysID}${queryStringArray}` // resources has values return updated logic
+        : `name=${server}`; // resources is blank leave old logic
+
+    return [
+        {
+            allowRealTime: true,
+            dataCategories: ["trend"],
+            filterQuery: filterQuery, // updated with Resources logic
+            id: "bWV0cmljQmFzZWNtZGJfY2lfd2luX3NlcnZlcjE3MDU2MzM0MDk3NzI=",
+            isDatabaseView: false,
+            label: {
+                code: null,
+                comment: "",
+                message: `${serverTitle} Server`
+            },
+            preferredVisualizations: ["aba8630dc2ccc9b3c1774af1b6820696"],
+            sourceType: "metricBase",
+            table: tableKey // updated with Resources logic
+        },
+        {
+            allowRealTime: true,
+            dataCategories: ["trend"],
+            filterQuery: resource && resource.length > 0 ? `cmdb_ci=15d7fa9d97c00ed0917df9f0f053afd2^name=disk_C` : "name=cruprgwhthpet02",
+            id: `Agent_cruprgwhthpet02-DATASOURCE`,
+            isDatabaseView: false,
+            label: {
+                code: null,
+                comment: "",
+                message: `TESTING Server`
+            },
+            preferredVisualizations: ["aba8630dc2ccc9b3c1774af1b6820696"],
+            sourceType: "metricBase",
+            table: tableKey // updated with Resources logic
+        },
+    ];
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-13 17:29:13</sys_created_on>
+        <sys_id>1b4180d647d40ed0118c2d8fe16d43b7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>line_2/dataSources</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_1b4180d647d40ed0118c2d8fe16d43b7</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-13 18:03:24</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_ux_client_script_1b4180d647d40ed0118c2d8fe16d43b7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="KPI Details"&gt;807682d447dc8e90118c2d8fe16d436f&lt;/macroponent&gt;&lt;name&gt;line_2/dataSources&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+    var serverMapping = {
+        "cmdb_ci_linux_server": {
+            server: api.state.cmdbCIServer,
+            serverTitle: "Linux"
+        },
+        "cmdb_ci_win_server": {
+            server: api.state.cmdbCIServer,
+            serverTitle: "Windows"
+        }
+    };
+
+    var { server, serverTitle } = serverMapping[api.state.ciClass] || {};
+
+    let resource = api.state.resource;
+
+    // 8A)
+    let tableKey = (resource &amp;&amp; resource.length &gt; 0)
+        ? "ci_resource_hardware" // with resources
+        : api.state.ciClass; // without resources
+
+    // 8B)
+    let queryStringArray = (resource &amp;&amp; resource.length &gt; 0)
+        ? `^name=${resource}` // If resource is not empty or null
+        : ''; // If resource is empty or null
+
+    let filterQuery = (resource &amp;&amp; resource.length &gt; 0)
+        ? `cmdb_ci=${api.state.sysID}${queryStringArray}` // resources has values return updated logic
+        : `name=${server}`; // resources is blank leave old logic
+
+    return [
+        {
+            allowRealTime: true,
+            dataCategories: ["trend"],
+            filterQuery: filterQuery, // updated with Resources logic
+            id: "bWV0cmljQmFzZWNtZGJfY2lfd2luX3NlcnZlcjE3MDU2MzM0MDk3NzI=",
+            isDatabaseView: false,
+            label: {
+                code: null,
+                comment: "",
+                message: `${serverTitle} Server`
+            },
+            preferredVisualizations: ["aba8630dc2ccc9b3c1774af1b6820696"],
+            sourceType: "metricBase",
+            table: tableKey // updated with Resources logic
+        },
+        {
+            allowRealTime: true,
+            dataCategories: ["trend"],
+            filterQuery: resource &amp;&amp; resource.length &gt; 0 ? `cmdb_ci=15d7fa9d97c00ed0917df9f0f053afd2^name=disk_C` : "name=cruprgwhthpet02",
+            id: `Agent_cruprgwhthpet02-DATASOURCE`,
+            isDatabaseView: false,
+            label: {
+                code: null,
+                comment: "",
+                message: `TESTING Server`
+            },
+            preferredVisualizations: ["aba8630dc2ccc9b3c1774af1b6820696"],
+            sourceType: "metricBase",
+            table: tableKey // updated with Resources logic
+        },
+    ];
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.montanez&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-13 17:29:13&lt;/sys_created_on&gt;&lt;sys_id&gt;1b4180d647d40ed0118c2d8fe16d43b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;line_2/dataSources&lt;/sys_name&gt;&lt;sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Optimiz AIOps Insights"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_1b4180d647d40ed0118c2d8fe16d43b7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.montanez&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-13 18:03:24&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-2000870701</payload_hash>
+        <record_name>line_2/dataSources</record_name>
+        <reverted_from/>
+        <source>0633e1d447988e90118c2d8fe16d4307</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-13 18:03:24</sys_created_on>
+        <sys_id>1ae03c12475c0ed0118c2d8fe16d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18da3a34d100000001</sys_recorded_at>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-13 18:03:24</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>5ee03c12f15c0ed02f32df05521be13b</update_guid>
+        <update_guid_history>5ee03c12f15c0ed02f32df05521be13b:-2000870701,b8803012745c0ed04441587151a150c6:992916405,91192892821c0ed01734f705d69d6fe3:-169793489</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-13 18:07:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>0fb8baeb0cf843228a861ac0f82e74a4</sys_id>
+        <sys_metadata>1b4180d647d40ed0118c2d8fe16d43b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>line_2/dataSources</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_1b4180d647d40ed0118c2d8fe16d43b7</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_1b4180d647d40ed0118c2d8fe16d43b7">1ae03c12475c0ed0118c2d8fe16d433c</sys_update_version>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-13 18:07:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

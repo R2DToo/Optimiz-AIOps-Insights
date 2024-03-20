@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="360 CI Insight Dashboard v2">a88f6d94471c8e90118c2d8fe16d4311</macroponent>
+        <name>Set SysMetric chosenMetric</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const data = api.data.look_up_records_1.results;
+
+    const chosenMetrics = data.map(metric => ({
+        metric_type_tiny_name: metric.label.value,
+        resource: []
+    }));
+
+    console.log("chosenMetrics CHOSEN METRIC: ", chosenMetrics);
+    api.setState("chosenMetrics", chosenMetrics);
+
+    // Setup filter for data query against sa_metric_map which will filter out metrics that 
+    // don't exist on the chosen CI
+    const metricTinyNames = chosenMetrics.map(metric => metric.metric_type_tiny_name).join(",");
+    let filter = `cmdb_ci=${api.state.ciSysID}^metric_type_id.metric_type_tiny_nameIN${metricTinyNames}`;
+    api.setState('metricExistsFilter', filter);
+    api.data.look_up_records_5.refresh();
+    // const metricTinyNames = chosenMetrics.map(metric => metric.metric_type_tiny_name).join(",");
+
+    // let filter = `cmdb_ci=${api.state.ciSysID}^resource_idISNOTEMPTY^metric_type_id.metric_type_tiny_nameIN${metricTinyNames}`;
+    // api.setState("getResourceQueryFilters", filter);
+    // console.log("getResourceQueryFilters: ", filter);
+    
+    // api.data.look_up_records_4.refresh();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 17:29:05</sys_created_on>
+        <sys_id>418f6d94471c8e90118c2d8fe16d4336</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Set SysMetric chosenMetric</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_418f6d94471c8e90118c2d8fe16d4336</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-07 21:48:44</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

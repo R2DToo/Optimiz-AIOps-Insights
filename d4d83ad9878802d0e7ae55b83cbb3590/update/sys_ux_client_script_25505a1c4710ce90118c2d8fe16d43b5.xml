@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">807682d447dc8e90118c2d8fe16d436f</macroponent>
+        <name>Extract Metric To Label</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    let metricToLabel = api.context.props.metric;
+
+    function extractMetric(input) {
+        const regex = /\[([^\]]+)\]/; // Regular expression to match values inside []
+
+        const match = regex.exec(input);
+        if (match && match.length > 1) {
+            return match[1]; // Return the matched value (group 1)
+        } else {
+            return null; // Return null if no match found
+        }
+    }
+
+    function extractResource(input) {
+        const regex = /\[([^\]]+)\]\s*(\S+)/; // Regular expression to match values after []
+
+        const match = regex.exec(input);
+        if (match && match.length > 2) {
+            const value = match[2].trim(); // Trim any leading or trailing spaces
+            if (value && !value.startsWith('cruprg')) { // Check if the value exists and does not start with 'cruprg'
+                return value !== '' ? value : null; // Return the value if it's not empty, otherwise return null
+            }
+        } else {
+            return null; // Return null if no match found or if value after [] is empty
+        }
+    }
+
+    api.setState("metricLabel", extractMetric(metricToLabel));
+    console.log("METRIC TO LABEL: ", extractMetric(metricToLabel));
+
+    api.setState("resource", extractResource(metricToLabel));
+    console.log("RESOURCE: ", extractResource(metricToLabel));
+
+    let filter = `retention_policy=5fc0dd325320111089b7ddeeff7b1292^nameINci_resource_hardware,${api.state.ciClass}^sys_name=${extractMetric(metricToLabel)}`;
+    api.setState("getMetricQueryFilters", filter);
+    console.log("getMetricQueryFilters: ", filter);
+    
+    api.data.look_up_records_1.refresh();
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 20:25:51</sys_created_on>
+        <sys_id>25505a1c4710ce90118c2d8fe16d43b5</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Extract Metric To Label</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_25505a1c4710ce90118c2d8fe16d43b5</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-08 18:25:10</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

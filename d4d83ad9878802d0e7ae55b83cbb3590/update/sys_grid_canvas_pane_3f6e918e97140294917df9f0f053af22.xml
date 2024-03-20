@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Usage by Web API">b76e918e97140294917df9f0f053af1f</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2016-01-21 18:17:26">6364fbd29f811200ef4afa7dc67fcf69</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-02-13 02:43:49</sys_created_on>
+        <sys_id>3f6e918e97140294917df9f0f053af22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b76e918e97140294917df9f0f053af1f</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_3f6e918e97140294917df9f0f053af22</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-02-13 02:43:49</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

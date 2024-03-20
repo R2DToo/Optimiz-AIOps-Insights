@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">807682d447dc8e90118c2d8fe16d436f</macroponent>
+        <name>Finalized chosenMetric Resource Key</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const data = api.data.look_up_records_3.results;
+    console.log("SA_METRIC_MAP DATA: ", data);
+
+    let mappedMetrics = {
+        metric_type_tiny_name: "",
+        resource: [""]
+    }
+
+    // const mappedMetrics = api.state.chosenMetrics.map(chosenMetric => {
+    //     const matchingDataItem = data.find(dataItem =>
+    //         dataItem.metric_type_id._reference.metric_type_tiny_name.value === chosenMetric.metric_type_tiny_name
+    //     );
+    //     // filter out null resources
+
+    //     // Check if a matching data item was found
+    //     if (matchingDataItem) {
+    //         return {
+    //             metric_type_tiny_name: chosenMetric.metric_type_tiny_name,
+    //             resource: [...chosenMetric.resource, matchingDataItem.resource_id.displayValue]
+    //         };
+    //     }
+
+    //     // If no match was found, return the original chosenMetric
+    //     return chosenMetric;
+    // });
+
+    // mappedMetrics.sort((a, b) => {
+    //     let metricA = a.metric_type_tiny_name;
+    //     let metricB = b.metric_type_tiny_name;
+    //     if (metricA < metricB) {
+    //         return -1;
+    //     }
+    //     if (metricA > metricB) {
+    //         return 1;
+    //     }
+    //     return 0;
+    // });
+
+    api.setState("chosenMetrics", mappedMetrics);
+    console.log("Mapped Metrics Resource KEY: ", mappedMetrics);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 21:48:52</sys_created_on>
+        <sys_id>a9505a1c4710ce90118c2d8fe16d43b5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Finalized chosenMetric Resource Key</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_a9505a1c4710ce90118c2d8fe16d43b5</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-07 22:01:17</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_ux_client_script_a9505a1c4710ce90118c2d8fe16d43b5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="KPI Details"&gt;807682d447dc8e90118c2d8fe16d436f&lt;/macroponent&gt;&lt;name&gt;Finalized chosenMetric Resource Key&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    const data = api.data.look_up_records_3.results;
+    console.log("SA_METRIC_MAP DATA: ", data);
+
+    let mappedMetrics = {
+        metric_type_tiny_name: "",
+        resource: [""]
+    }
+
+    // const mappedMetrics = api.state.chosenMetrics.map(chosenMetric =&gt; {
+    //     const matchingDataItem = data.find(dataItem =&gt;
+    //         dataItem.metric_type_id._reference.metric_type_tiny_name.value === chosenMetric.metric_type_tiny_name
+    //     );
+    //     // filter out null resources
+
+    //     // Check if a matching data item was found
+    //     if (matchingDataItem) {
+    //         return {
+    //             metric_type_tiny_name: chosenMetric.metric_type_tiny_name,
+    //             resource: [...chosenMetric.resource, matchingDataItem.resource_id.displayValue]
+    //         };
+    //     }
+
+    //     // If no match was found, return the original chosenMetric
+    //     return chosenMetric;
+    // });
+
+    // mappedMetrics.sort((a, b) =&gt; {
+    //     let metricA = a.metric_type_tiny_name;
+    //     let metricB = b.metric_type_tiny_name;
+    //     if (metricA &lt; metricB) {
+    //         return -1;
+    //     }
+    //     if (metricA &gt; metricB) {
+    //         return 1;
+    //     }
+    //     return 0;
+    // });
+
+    api.setState("chosenMetrics", mappedMetrics);
+    console.log("Mapped Metrics Resource KEY: ", mappedMetrics);
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.montanez&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-07 21:48:52&lt;/sys_created_on&gt;&lt;sys_id&gt;a9505a1c4710ce90118c2d8fe16d43b5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Finalized chosenMetric Resource Key&lt;/sys_name&gt;&lt;sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Optimiz AIOps Insights"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_a9505a1c4710ce90118c2d8fe16d43b5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.montanez&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-07 22:01:17&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1890189976</payload_hash>
+        <record_name>Finalized chosenMetric Resource Key</record_name>
+        <reverted_from/>
+        <source>0633e1d447988e90118c2d8fe16d4307</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-07 22:01:17</sys_created_on>
+        <sys_id>54dd22184714ce90118c2d8fe16d43b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d8596eca00000001</sys_recorded_at>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-07 22:01:17</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>98dd22185a14ce90e78fa3150f4135b5</update_guid>
+        <update_guid_history>98dd22185a14ce90e78fa3150f4135b5:-1890189976,e2faea504814ce90940001853ab2ac54:1010122846</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-08 16:47:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>90e0a9a491e845f89ba51fcaf47f3890</sys_id>
+        <sys_metadata>a9505a1c4710ce90118c2d8fe16d43b5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Finalized chosenMetric Resource Key</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_a9505a1c4710ce90118c2d8fe16d43b5</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_a9505a1c4710ce90118c2d8fe16d43b5">54dd22184714ce90118c2d8fe16d43b6</sys_update_version>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-08 16:47:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

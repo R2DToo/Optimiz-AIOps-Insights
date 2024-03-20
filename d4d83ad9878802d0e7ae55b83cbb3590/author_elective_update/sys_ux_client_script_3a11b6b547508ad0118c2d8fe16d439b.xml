@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="KPI Details">807682d447dc8e90118c2d8fe16d436f</macroponent>
+        <name>container_31/isHidden</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    console.log(api.state.selectedAgents);
+
+    // show component if the value contains value --> false
+
+    if (api.state.selectedAgents === null ||
+        api.state.selectedAgents.trim() === "" ||
+        api.state.selectedAgents.trim() === undefined) {
+        return true;
+    } else {
+        return false;
+    }
+
+    // return agentsToDisplay !== null || agentsToDisplay.trim() !== "";
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-12 18:03:09</sys_created_on>
+        <sys_id>3a11b6b547508ad0118c2d8fe16d439b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>container_31/isHidden</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_3a11b6b547508ad0118c2d8fe16d439b</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-12 18:09:56</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_ux_client_script_3a11b6b547508ad0118c2d8fe16d439b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="KPI Details"&gt;807682d447dc8e90118c2d8fe16d436f&lt;/macroponent&gt;&lt;name&gt;container_31/isHidden&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[
+    
+]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    console.log(api.state.selectedAgents);
+
+    // show component if the value contains value --&gt; false
+
+    if (api.state.selectedAgents === null ||
+        api.state.selectedAgents.trim() === "" ||
+        api.state.selectedAgents.trim() === undefined) {
+        return true;
+    } else {
+        return false;
+    }
+
+    // return agentsToDisplay !== null || agentsToDisplay.trim() !== "";
+}]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.montanez&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-12 18:03:09&lt;/sys_created_on&gt;&lt;sys_id&gt;3a11b6b547508ad0118c2d8fe16d439b&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;container_31/isHidden&lt;/sys_name&gt;&lt;sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Optimiz AIOps Insights"&gt;d4d83ad9878802d0e7ae55b83cbb3590&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_3a11b6b547508ad0118c2d8fe16d439b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.montanez&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-12 18:09:56&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;transform&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1830187850</payload_hash>
+        <record_name>container_31/isHidden</record_name>
+        <reverted_from/>
+        <source>0633e1d447988e90118c2d8fe16d4307</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-12 18:09:56</sys_created_on>
+        <sys_id>dcd86b7d47d48ad0118c2d8fe16d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d9e82ec810000001</sys_recorded_at>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-12 18:09:56</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>14d86b7da2d48ad0b7e3ca01b255d093</update_guid>
+        <update_guid_history>14d86b7da2d48ad0b7e3ca01b255d093:-1830187850,3548673dcfd48ad092d932794e5e05fc:-461088962,5518233db8d48ad0b27356f671033d91:-1217402579,cbf76ff929d48ad07ad640cbf764ae1a:-1170332167,9b77afb9dbd48ad06b56533e400ff694:-862603617,384727b9aed48ad0425fccb01ef7b371:-1722803169</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-12 18:13:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>2b23f9445604453395b21230660614b1</sys_id>
+        <sys_metadata>3a11b6b547508ad0118c2d8fe16d439b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>container_31/isHidden</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_3a11b6b547508ad0118c2d8fe16d439b</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_3a11b6b547508ad0118c2d8fe16d439b">dcd86b7d47d48ad0118c2d8fe16d4393</sys_update_version>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-12 18:13:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

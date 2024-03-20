@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="360 CI Insight Dashboard v2">a88f6d94471c8e90118c2d8fe16d4311</macroponent>
+        <name>single_score_31/colorConfig</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+	return [{
+    color: "758d1e6a5376011060a0ddeeff7b1221",
+    // color: "6ed951aa25a00110f877ba05643e1f87",
+    // color: "40a955aa25a00110f877ba05643e1f2c",
+    // color: "3db9d92a25a00110f877ba05643e1f30",
+    metric: "YldWMGNtbGpRbUZ6WldOdFpHSmZZMmxmZDJsdVgzTmxjblpsY2pFM01EZ3hNRFl3TXpJMk56WT0xNzA4MTA2MDM0NjE2"
+  }];
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>david.montanez</sys_created_by>
+        <sys_created_on>2024-02-16 18:08:54</sys_created_on>
+        <sys_id>c49c8c534798c214118c2d8fe16d4358</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>single_score_31/colorConfig</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_c49c8c534798c214118c2d8fe16d4358</sys_update_name>
+        <sys_updated_by>david.montanez</sys_updated_by>
+        <sys_updated_on>2024-02-22 15:42:10</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>
