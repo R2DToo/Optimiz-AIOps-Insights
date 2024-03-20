@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen">
+    <sys_ux_applicability_m2m_screen action="DELETE">
+        <active>true</active>
+        <applicability display_value="Event Management Operators">95a316d40b0d81106237818393673aed</applicability>
+        <order>0</order>
+        <screen display_value="Default">733ecc6147cc4a50118c2d8fe16d43c0</screen>
+        <sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 21:20:49</sys_created_on>
+        <sys_id>fb3ecc6147cc4a50118c2d8fe16d43c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_screen_fb3ecc6147cc4a50118c2d8fe16d43c5</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 21:20:49</sys_updated_on>
+    </sys_ux_applicability_m2m_screen>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_ux_applicability_m2m_screen_fb3ecc6147cc4a50118c2d8fe16d43c5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_screen"><sys_ux_applicability_m2m_screen action="INSERT_OR_UPDATE"><active>true</active><applicability display_value="Event Management Operators">95a316d40b0d81106237818393673aed</applicability><order>0</order><screen display_value="Default">733ecc6147cc4a50118c2d8fe16d43c0</screen><sys_class_name>sys_ux_applicability_m2m_screen</sys_class_name><sys_created_by>optimiz</sys_created_by><sys_created_on>2024-01-29 21:20:49</sys_created_on><sys_id>fb3ecc6147cc4a50118c2d8fe16d43c5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package><sys_policy/><sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope><sys_update_name>sys_ux_applicability_m2m_screen_fb3ecc6147cc4a50118c2d8fe16d43c5</sys_update_name><sys_updated_by>optimiz</sys_updated_by><sys_updated_on>2024-01-29 21:20:49</sys_updated_on></sys_ux_applicability_m2m_screen></record_update>]]></payload>
+        <payload_hash>-1420418721</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5e2af6d197040ed0917df9f0f053afdb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 21:20:49</sys_created_on>
+        <sys_id>3f3ecc6147cc4a50118c2d8fe16d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d5718a4b00000001</sys_recorded_at>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 21:20:49</sys_updated_on>
+        <type>Screen Applicability</type>
+        <update_guid>7b3ecc616bcc4a50f1c2fbe6cb3678c7</update_guid>
+        <update_guid_history>7b3ecc616bcc4a50f1c2fbe6cb3678c7:-1420418721</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 21:30:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_applicability_m2m_screen">sys_ux_applicability_m2m_screen</sys_db_object>
+        <sys_id>4845a1c4b2324710bcd5a610b2454410</sys_id>
+        <sys_metadata>fb3ecc6147cc4a50118c2d8fe16d43c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_ux_applicability_m2m_screen_fb3ecc6147cc4a50118c2d8fe16d43c5</sys_update_name>
+        <sys_update_version display_value="sys_ux_applicability_m2m_screen_fb3ecc6147cc4a50118c2d8fe16d43c5">3f3ecc6147cc4a50118c2d8fe16d43d4</sys_update_version>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 21:30:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

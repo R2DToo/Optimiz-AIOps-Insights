@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="INSERT_OR_UPDATE">
+        <can_read>true</can_read>
+        <can_share>false</can_share>
+        <can_write>false</can_write>
+        <dashboard display_value="Optimiz AIOps Insights">166af655d8040ed0fd2b58bd1d1d24aa</dashboard>
+        <group/>
+        <role display_value="evt_mgmt_operator" name="evt_mgmt_operator">c688e08293b00200725d3b5b357ffb8e</role>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 15:14:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df6a7a5597040ed0917df9f0f053af3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>166af655d8040ed0fd2b58bd1d1d24aa</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>par_dashboard_permission_df6a7a5597040ed0917df9f0f053af3c</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 15:14:35</sys_updated_on>
+        <user/>
+    </par_dashboard_permission>
+</record_update>

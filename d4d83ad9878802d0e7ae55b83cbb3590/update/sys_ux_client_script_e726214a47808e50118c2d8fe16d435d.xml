@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="360 CI Dashboard">373ecc6147cc4a50118c2d8fe16d43bd</macroponent>
+        <name>Finalized chosenMetric Resource Key</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const data = api.data.look_up_records_4.results;
+    console.log("SA_METRIC_MAP DATA: ", data);
+
+    console.log("chosenMetrics Resource: ", api.state.chosenMetrics);
+
+    const mappedMetrics = api.state.chosenMetrics.map(chosenMetric => {
+        const matchingDataItem = data.find(dataItem =>
+            dataItem.metric_type_id._reference.metric_type_tiny_name.value === chosenMetric.metric_type_tiny_name
+        );
+        // filter out null resources
+
+        // Check if a matching data item was found
+        if (matchingDataItem) {
+            return {
+                metric_type_tiny_name: chosenMetric.metric_type_tiny_name,
+                resource: [...chosenMetric.resource, matchingDataItem.resource_id.displayValue]
+            };
+        }
+
+        // If no match was found, return the original chosenMetric
+        return chosenMetric;
+    });
+
+    mappedMetrics.sort((a, b) => {
+        let metricA = a.metric_type_tiny_name;
+        let metricB = b.metric_type_tiny_name;
+        if (metricA < metricB) {
+            return -1;
+        }
+        if (metricA > metricB) {
+            return 1;
+        }
+        return 0;
+    });
+
+    api.setState("chosenMetrics", mappedMetrics);
+    console.log("Mapped Metrics Resource KEY: ", mappedMetrics);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-31 17:55:54</sys_created_on>
+        <sys_id>e726214a47808e50118c2d8fe16d435d</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Finalized chosenMetric Resource Key</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_e726214a47808e50118c2d8fe16d435d</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-02-05 18:50:00</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

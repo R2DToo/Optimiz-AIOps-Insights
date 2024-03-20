@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="x_opti8_optimiz_ai_optimiz_aiops_insights_search_profile_default_spell_check_dictionary">2b6a7a5597040ed0917df9f0f053af9d</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="optimiz-aiops-insights Search Profile">5e6af65558040ed068345ec0981c78b0</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 15:14:37</sys_created_on>
+        <sys_id>2b6a7a5597040ed0917df9f0f053afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_opti8_optimiz_ai_optimiz_aiops_insights_search_profile_default_spell_check_dictionary.optimiz-aiops-insights Search Profile</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_2b6a7a5597040ed0917df9f0f053afa0</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 15:14:37</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

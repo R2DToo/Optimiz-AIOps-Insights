@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>LINK_TO_DESTINATION_RELAY_(360_CI_INSIGHTS)</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Link to destination Relay (360 CI Insights)</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.route",
+        "label": "Route type",
+        "mandatory": false,
+        "name": "route",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Route fields",
+        "mandatory": false,
+        "name": "fields",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Optionals parameters",
+        "mandatory": false,
+        "name": "params",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": "",
+        "label": "Remove previous URL from browser history",
+        "mandatory": false,
+        "name": "redirect",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": "",
+        "label": "Load in background (advanced)",
+        "mandatory": false,
+        "name": "passiveNavigation",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": "",
+        "label": "Title (advanced)",
+        "mandatory": false,
+        "name": "title",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": "",
+        "label": "Multi-instance field (advanced)",
+        "mandatory": false,
+        "name": "multiInstField",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "string",
+        "interfaceApiName": "",
+        "label": "Sub-navigation route (advanced)",
+        "mandatory": false,
+        "name": "targetRoute",
+        "readOnly": false,
+        "typeMetadata": null
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "External URL object",
+        "mandatory": false,
+        "name": "external",
+        "readOnly": false,
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "target": {
+                        "description": "Target window to open. Default is _blank",
+                        "type": "string"
+                    },
+                    "url": {
+                        "description": "The URL to open",
+                        "type": "string"
+                    }
+                },
+                "title": "External URL Object",
+                "type": "object"
+            }
+        }
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": "global.route",
+        "label": "Navigation Options object",
+        "mandatory": false,
+        "name": "navigationOptions",
+        "readOnly": false,
+        "typeMetadata": {
+            "schema": {
+                "properties": {
+                    "navigateExternal": {
+                        "description": "Enable external navigation",
+                        "type": "boolean"
+                    },
+                    "targetWindowRef": {
+                        "description": "Target window opened by action dispatcher",
+                        "type": "object"
+                    },
+                    "windowOptions": {
+                        "description": "Target and windowOptions with which window.open to be called. Default values are _blank and emptyString",
+                        "type": "json"
+                    }
+                },
+                "title": "Navigation Options Object",
+                "type": "object"
+            }
+        }
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "External URL object",
+  "comment" : ""
+}, {
+  "message" : "Load in background (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Multi-instance field (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Navigation Options object",
+  "comment" : ""
+}, {
+  "message" : "Optionals parameters",
+  "comment" : ""
+}, {
+  "message" : "Remove previous URL from browser history",
+  "comment" : ""
+}, {
+  "message" : "Route fields",
+  "comment" : ""
+}, {
+  "message" : "Route type",
+  "comment" : ""
+}, {
+  "message" : "Sub-navigation route (advanced)",
+  "comment" : ""
+}, {
+  "message" : "Title (advanced)",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-02-07 15:44:14</sys_created_on>
+        <sys_id>1ea31d1447188e90118c2d8fe16d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Link to destination Relay (360 CI Insights)</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_event_1ea31d1447188e90118c2d8fe16d431b</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-02-07 15:44:14</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=1ea31d1447188e90118c2d8fe16d431b"/>
+</record_update>

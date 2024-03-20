@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="360 CI Dashboard">373ecc6147cc4a50118c2d8fe16d43bd</macroponent>
+        <name>heading_12/label</name>
+        <preset/>
+        <required_translations>[
+    
+]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {TransformApiHelpers} params.helpers
+ */
+function evaluateProperty({
+    api,
+    helpers
+}) {
+    let metricLabel = api.item.value.metric_type_tiny_name;
+    let resource = api.item.value.resource;
+    let resourceLabel = "";
+    if (resource.length > 0) {
+        resourceLabel = " :: " + resource[0];
+    }
+
+    // Hard coded separation
+    function separateCompoundWords(word) {
+        let separateWords = {
+            cpupercent: 'cpu percent',
+            queuelength: 'queue length',
+            loadavgsec: 'load avg sec',
+            // Add more mappings as needed
+        };
+
+        return separateWords[word.toLowerCase()] || word;
+    }
+
+    let formattedMetricLabel = metricLabel
+        .replace(/_/g, ' ') // Replace underscores with spaces
+        .split(' ') // Split the label into words
+        .map(separateCompoundWords) // Separate compound words
+        .join(' ') // Join the words back into a string
+        .replace(/\bcpu\b/gi, 'CPU') // Capitalize "cpu" (case-insensitive)
+        .replace(/\btcp\b/gi, 'TCP') // Capitalize "cpu" (case-insensitive)
+        .replace(/\b\w/g, c => c.toUpperCase()) // Capitalize every word
+        .replace(/percent(age)?$/i, '(%)') // Replace "percent" or "percentage" with "(%)"
+        .replace(/\bkb\b/gi, '(KB)') // Replace "kb" with "(KB)"
+        .replace(/\bmb\b/gi, '(MB)') // Replace "mb" with "(MB)"
+        .replace(/\bsec\b/gi, '(s)'); // Replace "sec" with "(s)"
+
+    return formattedMetricLabel + resourceLabel;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-31 21:43:41</sys_created_on>
+        <sys_id>8f252a4247888e50118c2d8fe16d4365</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>heading_12/label</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_client_script_8f252a4247888e50118c2d8fe16d4365</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-02-06 00:51:19</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

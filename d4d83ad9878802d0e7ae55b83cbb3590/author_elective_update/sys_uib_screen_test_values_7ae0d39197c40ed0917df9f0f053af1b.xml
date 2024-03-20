@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="DELETE">
+        <macroponent_config>{
+    "5865e308432021105571609dc7b8f23b": {
+        "columnLimit": 0,
+        "columns": "",
+        "currentPage": 0,
+        "filter": "",
+        "listId": "",
+        "parentRecordSysId": "",
+        "parentTable": "",
+        "recordCountLimit": null,
+        "rowLimit": 10,
+        "table": "task",
+        "transformScriptSysId": null,
+        "view": ""
+    },
+    "1d9f8db04340311017b739603ab8f259": {
+        "policySysId": "",
+        "ts": ""
+    },
+    "07811f1077a31110960ced43ba5a9949": {
+        "ciSysid": "48fb657847e3fd50118c2d8fe16d43a4",
+        "controlPanelButtonItems": null,
+        "levels": "2",
+        "nodemapButtonItems": null,
+        "presetId": "48fb657847e3fd50118c2d8fe16d43a4",
+        "selectedItemId": "48fb657847e3fd50118c2d8fe16d43a4"
+    },
+    "7cb6eb2e77321510960ced43ba5a9904": {
+        "ciSysid": "",
+        "levels": ""
+    },
+    "9585a6bf5b73011046f91c8fb681c7d6": {
+        "disableCollapseAll": false,
+        "edges": "[{\"id\":\"edge:root_1:inner_group:ckqjews4h00003h6umhpk9vv5\",\"sourceId\":\"root_1\",\"targetId\":\"inner_group\",\"label\":\"root_1 -&gt; inner_group #1\"},{\"id\":\"edge:node_0:node_2:ckqjews4h00013h6u6l8frc69\",\"sourceId\":\"node_0\",\"targetId\":\"node_2\",\"label\":\"node_0 -&gt; node_2\"},{\"id\":\"edge:node_0:node_7:ckqjews4h00023h6u1mt34z38\",\"sourceId\":\"node_0\",\"targetId\":\"node_7\",\"label\":\"node_0 -&gt; node_7\"},{\"id\":\"edge:root_1:inner_group:ckqjews4h00033h6u1sjwyer4\",\"sourceId\":\"root_1\",\"targetId\":\"inner_group\",\"label\":\"root_1 -&gt; inner_group #2\"},{\"id\":\"edge:root_1:node_1:ckqjews4h00043h6uyjch4tgr\",\"sourceId\":\"root_1\",\"targetId\":\"node_1\",\"label\":\"root_1 -&gt; node_1\"},{\"id\":\"edge:root_1:node_2:ckqjews4h00053h6uqvelaef4\",\"sourceId\":\"root_1\",\"targetId\":\"node_2\",\"label\":\"root_1 -&gt; node_2 #1\"},{\"id\":\"edge:node_0:node_3:ckqjews4h00063h6uqaleq6oj\",\"sourceId\":\"node_0\",\"targetId\":\"node_3\",\"label\":\"node_0 -&gt; node_3\"},{\"id\":\"edge:node_2:node_4:ckqjews4h00073h6ucji2k9xh\",\"sourceId\":\"node_2\",\"targetId\":\"node_4\",\"label\":\"node_2 -&gt; node_4\"},{\"id\":\"edge:node_4:node_6:ckqjews4h00083h6um1wdwpow\",\"sourceId\":\"node_4\",\"targetId\":\"node_6\",\"label\":\"node_4 -&gt; node_6\"},{\"id\":\"edge:node_3:node_7:ckqjews4h00093h6u17u5cpkq\",\"sourceId\":\"node_3\",\"targetId\":\"node_7\",\"label\":\"node_3 -&gt; node_7\"},{\"id\":\"edge:root_1:node_2:ckqjews4h000a3h6uo6try7jy\",\"sourceId\":\"root_1\",\"targetId\":\"node_2\",\"label\":\"root_1 -&gt; node_2 #2\"},{\"id\":\"edge:node_4:node_5:ckqjews4h000b3h6u6cw54rbt\",\"sourceId\":\"node_4\",\"targetId\":\"node_5\",\"label\":\"node_4 -&gt; node_5\"},{\"id\":\"edge:node_5:node_8:ckqjews4h000c3h6ul9ryvkah\",\"sourceId\":\"node_5\",\"targetId\":\"node_8\",\"label\":\"node_5 -&gt; node_8\"},{\"id\":\"edge:node_8:node_4:ckqjews4h000d3h6u3aj2ijeb\",\"sourceId\":\"node_8\",\"targetId\":\"node_4\",\"label\":\"node_8 -&gt; node_4\"},{\"id\":\"edge:node_7:node_4:ckqjews4h000d3h6u3aj2ijeb\",\"sourceId\":\"node_7\",\"targetId\":\"node_4\",\"label\":\"node_7 -&gt; node_4\"}]",
+        "hiddenEdgeIds": "[]",
+        "hiddenNodeIds": "[]",
+        "homeNodeId": "",
+        "nodes": [
+            {
+                "id": "outer_group",
+                "isGroup": true,
+                "viewData": {
+                    "groupCount": 1,
+                    "primaryLabel": "Outer group"
+                }
+            },
+            {
+                "groupIds": [
+                    "outer_group"
+                ],
+                "id": "inner_group",
+                "isGroup": true,
+                "viewData": {
+                    "groupCount": 3,
+                    "primaryLabel": "Inner group"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "48fb657847e3fd50118c2d8fe16d43a4",
+                "viewData": {
+                    "primaryLabel": "Node #0",
+                    "userName": "Abel Tuter"
+                }
+            },
+            {
+                "id": "node_1",
+                "viewData": {
+                    "image": "https://picsum.photos/50",
+                    "primaryLabel": "Node #1"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "node_2",
+                "viewData": {
+                    "primaryLabel": "Node #2",
+                    "status": "positive"
+                }
+            },
+            {
+                "id": "node_3",
+                "viewData": {
+                    "image": "https://picsum.photos/50",
+                    "primaryLabel": "Node #3"
+                }
+            },
+            {
+                "id": "node_4",
+                "viewData": {
+                    "primaryLabel": "Node #4"
+                }
+            },
+            {
+                "id": "node_5",
+                "viewData": {
+                    "primaryLabel": "Node #5"
+                }
+            },
+            {
+                "id": "node_6",
+                "viewData": {
+                    "icon": "bug-outline",
+                    "primaryLabel": "Node #6",
+                    "status": "error"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "node_7",
+                "viewData": {
+                    "primaryLabel": "Node #7"
+                }
+            },
+            {
+                "id": "node_8",
+                "viewData": {
+                    "primaryLabel": "Node #8"
+                }
+            },
+            {
+                "id": "node_9",
+                "isInactive": true,
+                "viewData": {
+                    "primaryLabel": "Node #9",
+                    "secondaryLabel": "(inactive)"
+                }
+            },
+            {
+                "id": "root_1",
+                "viewData": {
+                    "primaryLabel": "Root node"
+                }
+            }
+        ],
+        "showError": false
+    },
+    "fdcde28377221110960ced43ba5a99e7": {},
+    "sysId": "48fb657847e3fd50118c2d8fe16d43a4",
+    "ciClass": "cmdb_ci_win_server"
+}</macroponent_config>
+        <screen display_value="360 CI Dashboard v2 default copy">eae0939197c40ed0917df9f0f053afd9</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 16:52:51</sys_created_on>
+        <sys_id>7ae0d39197c40ed0917df9f0f053af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_7ae0d39197c40ed0917df9f0f053af1b</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 16:52:51</sys_updated_on>
+    </sys_uib_screen_test_values>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</application>
+        <file_path/>
+        <instance_id>81ea05e71b2a79541024eb9b2d4bcbca</instance_id>
+        <instance_name>aiops12</instance_name>
+        <name>sys_uib_screen_test_values_7ae0d39197c40ed0917df9f0f053af1b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values"><sys_uib_screen_test_values action="INSERT_OR_UPDATE"><macroponent_config>{
+    "5865e308432021105571609dc7b8f23b": {
+        "columnLimit": 0,
+        "columns": "",
+        "currentPage": 0,
+        "filter": "",
+        "listId": "",
+        "parentRecordSysId": "",
+        "parentTable": "",
+        "recordCountLimit": null,
+        "rowLimit": 10,
+        "table": "task",
+        "transformScriptSysId": null,
+        "view": ""
+    },
+    "1d9f8db04340311017b739603ab8f259": {
+        "policySysId": "",
+        "ts": ""
+    },
+    "07811f1077a31110960ced43ba5a9949": {
+        "ciSysid": "48fb657847e3fd50118c2d8fe16d43a4",
+        "controlPanelButtonItems": null,
+        "levels": "2",
+        "nodemapButtonItems": null,
+        "presetId": "48fb657847e3fd50118c2d8fe16d43a4",
+        "selectedItemId": "48fb657847e3fd50118c2d8fe16d43a4"
+    },
+    "7cb6eb2e77321510960ced43ba5a9904": {
+        "ciSysid": "",
+        "levels": ""
+    },
+    "9585a6bf5b73011046f91c8fb681c7d6": {
+        "disableCollapseAll": false,
+        "edges": "[{\"id\":\"edge:root_1:inner_group:ckqjews4h00003h6umhpk9vv5\",\"sourceId\":\"root_1\",\"targetId\":\"inner_group\",\"label\":\"root_1 -&gt; inner_group #1\"},{\"id\":\"edge:node_0:node_2:ckqjews4h00013h6u6l8frc69\",\"sourceId\":\"node_0\",\"targetId\":\"node_2\",\"label\":\"node_0 -&gt; node_2\"},{\"id\":\"edge:node_0:node_7:ckqjews4h00023h6u1mt34z38\",\"sourceId\":\"node_0\",\"targetId\":\"node_7\",\"label\":\"node_0 -&gt; node_7\"},{\"id\":\"edge:root_1:inner_group:ckqjews4h00033h6u1sjwyer4\",\"sourceId\":\"root_1\",\"targetId\":\"inner_group\",\"label\":\"root_1 -&gt; inner_group #2\"},{\"id\":\"edge:root_1:node_1:ckqjews4h00043h6uyjch4tgr\",\"sourceId\":\"root_1\",\"targetId\":\"node_1\",\"label\":\"root_1 -&gt; node_1\"},{\"id\":\"edge:root_1:node_2:ckqjews4h00053h6uqvelaef4\",\"sourceId\":\"root_1\",\"targetId\":\"node_2\",\"label\":\"root_1 -&gt; node_2 #1\"},{\"id\":\"edge:node_0:node_3:ckqjews4h00063h6uqaleq6oj\",\"sourceId\":\"node_0\",\"targetId\":\"node_3\",\"label\":\"node_0 -&gt; node_3\"},{\"id\":\"edge:node_2:node_4:ckqjews4h00073h6ucji2k9xh\",\"sourceId\":\"node_2\",\"targetId\":\"node_4\",\"label\":\"node_2 -&gt; node_4\"},{\"id\":\"edge:node_4:node_6:ckqjews4h00083h6um1wdwpow\",\"sourceId\":\"node_4\",\"targetId\":\"node_6\",\"label\":\"node_4 -&gt; node_6\"},{\"id\":\"edge:node_3:node_7:ckqjews4h00093h6u17u5cpkq\",\"sourceId\":\"node_3\",\"targetId\":\"node_7\",\"label\":\"node_3 -&gt; node_7\"},{\"id\":\"edge:root_1:node_2:ckqjews4h000a3h6uo6try7jy\",\"sourceId\":\"root_1\",\"targetId\":\"node_2\",\"label\":\"root_1 -&gt; node_2 #2\"},{\"id\":\"edge:node_4:node_5:ckqjews4h000b3h6u6cw54rbt\",\"sourceId\":\"node_4\",\"targetId\":\"node_5\",\"label\":\"node_4 -&gt; node_5\"},{\"id\":\"edge:node_5:node_8:ckqjews4h000c3h6ul9ryvkah\",\"sourceId\":\"node_5\",\"targetId\":\"node_8\",\"label\":\"node_5 -&gt; node_8\"},{\"id\":\"edge:node_8:node_4:ckqjews4h000d3h6u3aj2ijeb\",\"sourceId\":\"node_8\",\"targetId\":\"node_4\",\"label\":\"node_8 -&gt; node_4\"},{\"id\":\"edge:node_7:node_4:ckqjews4h000d3h6u3aj2ijeb\",\"sourceId\":\"node_7\",\"targetId\":\"node_4\",\"label\":\"node_7 -&gt; node_4\"}]",
+        "hiddenEdgeIds": "[]",
+        "hiddenNodeIds": "[]",
+        "homeNodeId": "",
+        "nodes": [
+            {
+                "id": "outer_group",
+                "isGroup": true,
+                "viewData": {
+                    "groupCount": 1,
+                    "primaryLabel": "Outer group"
+                }
+            },
+            {
+                "groupIds": [
+                    "outer_group"
+                ],
+                "id": "inner_group",
+                "isGroup": true,
+                "viewData": {
+                    "groupCount": 3,
+                    "primaryLabel": "Inner group"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "48fb657847e3fd50118c2d8fe16d43a4",
+                "viewData": {
+                    "primaryLabel": "Node #0",
+                    "userName": "Abel Tuter"
+                }
+            },
+            {
+                "id": "node_1",
+                "viewData": {
+                    "image": "https://picsum.photos/50",
+                    "primaryLabel": "Node #1"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "node_2",
+                "viewData": {
+                    "primaryLabel": "Node #2",
+                    "status": "positive"
+                }
+            },
+            {
+                "id": "node_3",
+                "viewData": {
+                    "image": "https://picsum.photos/50",
+                    "primaryLabel": "Node #3"
+                }
+            },
+            {
+                "id": "node_4",
+                "viewData": {
+                    "primaryLabel": "Node #4"
+                }
+            },
+            {
+                "id": "node_5",
+                "viewData": {
+                    "primaryLabel": "Node #5"
+                }
+            },
+            {
+                "id": "node_6",
+                "viewData": {
+                    "icon": "bug-outline",
+                    "primaryLabel": "Node #6",
+                    "status": "error"
+                }
+            },
+            {
+                "groupIds": [
+                    "inner_group"
+                ],
+                "id": "node_7",
+                "viewData": {
+                    "primaryLabel": "Node #7"
+                }
+            },
+            {
+                "id": "node_8",
+                "viewData": {
+                    "primaryLabel": "Node #8"
+                }
+            },
+            {
+                "id": "node_9",
+                "isInactive": true,
+                "viewData": {
+                    "primaryLabel": "Node #9",
+                    "secondaryLabel": "(inactive)"
+                }
+            },
+            {
+                "id": "root_1",
+                "viewData": {
+                    "primaryLabel": "Root node"
+                }
+            }
+        ],
+        "showError": false
+    },
+    "fdcde28377221110960ced43ba5a99e7": {},
+    "sysId": "48fb657847e3fd50118c2d8fe16d43a4",
+    "ciClass": "cmdb_ci_win_server"
+}</macroponent_config><screen display_value="360 CI Dashboard v2 default copy">eae0939197c40ed0917df9f0f053afd9</screen><sys_class_name>sys_uib_screen_test_values</sys_class_name><sys_created_by>optimiz</sys_created_by><sys_created_on>2024-01-29 16:52:51</sys_created_on><sys_id>7ae0d39197c40ed0917df9f0f053af1b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package><sys_policy/><sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope><sys_update_name>sys_uib_screen_test_values_7ae0d39197c40ed0917df9f0f053af1b</sys_update_name><sys_updated_by>optimiz</sys_updated_by><sys_updated_on>2024-01-29 16:52:51</sys_updated_on></sys_uib_screen_test_values></record_update>]]></payload>
+        <payload_hash>-558644246</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5e2af6d197040ed0917df9f0f053afdb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 16:52:51</sys_created_on>
+        <sys_id>bae0d39197c40ed0917df9f0f053af1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18d562351310000001</sys_recorded_at>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 16:52:51</sys_updated_on>
+        <type>UIB Screen Test Values</type>
+        <update_guid>bee0d39186c40ed079553f8cac71911c</update_guid>
+        <update_guid_history>bee0d39186c40ed079553f8cac71911c:-558644246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-01-29 17:42:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_uib_screen_test_values">sys_uib_screen_test_values</sys_db_object>
+        <sys_id>236646b235cd4d0a885f5a2e7d8bb999</sys_id>
+        <sys_metadata>7ae0d39197c40ed0917df9f0f053af1b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_scope_delete display_value="">061108c75cdc4410a9ad203e0b8d2900</sys_scope_delete>
+        <sys_update_name>sys_uib_screen_test_values_7ae0d39197c40ed0917df9f0f053af1b</sys_update_name>
+        <sys_update_version display_value="sys_uib_screen_test_values_7ae0d39197c40ed0917df9f0f053af1b">bae0d39197c40ed0917df9f0f053af1d</sys_update_version>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-01-29 17:42:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

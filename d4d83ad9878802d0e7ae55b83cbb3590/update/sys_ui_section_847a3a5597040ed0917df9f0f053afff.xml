@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="847a3a5597040ed0917df9f0f053afff" sys_domain="global" table="em_alert" version="3" view="workspace-optimiz-aiops-insights-0">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>c87aba5597040ed0917df9f0f053af77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>source</element>
+            <position>1</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>node</element>
+            <position>2</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>cc7aba5597040ed0917df9f0f053af45</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>3</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resource</element>
+            <position>4</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cmdb_ci</element>
+            <position>5</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>incident</element>
+            <position>6</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remote_task_id</element>
+            <position>7</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>metric_name</element>
+            <position>8</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>severity</element>
+            <position>10</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af46</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>11</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acknowledged</element>
+            <position>12</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>maintenance</element>
+            <position>13</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>14</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>15</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>group.feedback</element>
+            <position>16</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>kb</element>
+            <position>17</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>c07aba5597040ed0917df9f0f053af77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>event_count</element>
+            <position>18</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af47</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>19</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>20</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>21</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>message_key</element>
+            <position>22</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>kb_url</element>
+            <position>23</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>847aba5597040ed0917df9f0f053af50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cxs_table_search.xml</element>
+            <position>24</position>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_id>8c7aba5597040ed0917df9f0f053af4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="em_alert" sys_domain="global" view="166af65594040ed00056a6c7924005a7">847a3a5597040ed0917df9f0f053afff</sys_ui_section>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>em_alert</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>optimiz</sys_created_by>
+            <sys_created_on>2024-01-29 15:14:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>847a3a5597040ed0917df9f0f053afff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>em_alert</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+            <sys_update_name>sys_ui_section_847a3a5597040ed0917df9f0f053afff</sys_update_name>
+            <sys_updated_by>optimiz</sys_updated_by>
+            <sys_updated_on>2024-01-29 15:14:38</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Workspace Optimiz AIOps Insights 0" name="workspace-optimiz-aiops-insights-0">166af65594040ed00056a6c7924005a7</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

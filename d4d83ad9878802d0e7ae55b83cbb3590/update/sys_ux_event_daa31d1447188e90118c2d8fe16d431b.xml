@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Redirect To Metric KPI Detail Drill-Down Page</description>
+        <event_name>METRIC_VISUALIZATION_DRILLDOWN</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>METRIC_VISUALIZATION_DRILLDOWN</label>
+        <props>[
+    
+]</props>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>optimiz</sys_created_by>
+        <sys_created_on>2024-02-07 15:44:14</sys_created_on>
+        <sys_id>daa31d1447188e90118c2d8fe16d431b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>METRIC_VISUALIZATION_DRILLDOWN</sys_name>
+        <sys_package display_value="Optimiz AIOps Insights" source="x_opti8_optimiz_ai">d4d83ad9878802d0e7ae55b83cbb3590</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Optimiz AIOps Insights">d4d83ad9878802d0e7ae55b83cbb3590</sys_scope>
+        <sys_update_name>sys_ux_event_daa31d1447188e90118c2d8fe16d431b</sys_update_name>
+        <sys_updated_by>optimiz</sys_updated_by>
+        <sys_updated_on>2024-02-07 15:44:14</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=daa31d1447188e90118c2d8fe16d431b"/>
+</record_update>
